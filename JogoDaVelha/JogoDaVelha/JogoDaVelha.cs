@@ -40,7 +40,7 @@ namespace JogoDaVelha
             if (quantidadePreenchida < 5)
                 return;
 
-            if (ExisteVitoriaDiagonal() || ExisteVitoriaVertical() || ExisteVitoriaDiagonal())
+            if (ExisteVitoriaHorizontal() || ExisteVitoriaVertical() || ExisteVitoriaDiagonal())
             {
                 fimDeJogo = true;
                 Console.WriteLine($"Fim de jogo!!! Vitória de {vez}");
